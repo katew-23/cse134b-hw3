@@ -7,22 +7,6 @@
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/style.css">
 
-    <style>
-        main {
-            border: 40px solid transparent;
-        }
-
-        skill-subsection {
-            display: inline-block;
-            width: 25%;
-            margin-left: 6rem;
-        }
-
-        footer {
-            border-left: 650px solid transparent; 
-        }
-    </style>
-
 </head>
 
 <body>
@@ -40,17 +24,16 @@
     <noscript>This site works without JavaScript. Some embeds just won't load.</noscript>
 
     <main>
-        <h1>
+        <section class="title">
             <picture>
                 <source srcset="assets/img/kate_image.webp" type="image/webp">
-                <img src="assets/img/kate_image.jpg" alt="Headshot of Kate Wang" width="240">
+                <img src="assets/img/kate_image.jpg" alt="Image of Kate Wang" width="240">
             </picture>
-            &nbsp;
-            Hi, I'm <strong>Kate Wang</strong>!
-        </h1>
+            <h1>Hi, I'm <strong>Kate Wang</strong>!</h1>
+        </section>
 
-        <section id="about-me">
-            <h2><u>About Me</u></h2>
+        <section class="about-me">
+            <h2>About Me</h2>
             <p>
                 I'm a Computer Science student at UC San Diego with a great passion for building meaningful 
                 products that combine thoughtful design with robust engineering to create a positive impact 
@@ -67,80 +50,57 @@
             </p>
         </section>
 
-        <section id="skills">
-            <h2><u>Skills</u></h2>
+        <section class="skills">
+            <h2>Skills</h2>
 
-            <skill-subsection>
-                <h3><i>Languages:</i></h3>
-                <ol>
-                    <li>C/C++</li>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                </ol>
-            </skill-subsection>
+            <div class="skills-grid">
+                <skill-subsection>
+                    <h3><i>Languages:</i></h3>
+                    <ol>
+                        <li>C/C++</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ol>
+                </skill-subsection>
 
-            <skill-subsection>
-                <h3><i>Frameworks & Tools:</i></h3>
-                <ul>
-                    <li>Git</li>
-                    <li>React</li>
-                    <li>Express</li>
-                    <li>Expo</li>
-                    <li>MongoDB</li>
-                    <li>Pandas</li>
-                    <li>Numpy</li>
-                </ul>
-            </skill-subsection>
+                <skill-subsection>
+                    <h3><i>Frameworks &amp; Tools:</i></h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>React</li>
+                        <li>Express</li>
+                        <li>Expo</li>
+                        <li>MongoDB</li>
+                        <li>Pandas</li>
+                        <li>Numpy</li>
+                    </ul>
+                </skill-subsection>
 
-            <skill-subsection>
-                <h3><i>Data Science & AI:</i></h3>
-                <ul>
-                    <li>Data Analysis</li>
-                    <li>Machine Learning</li>
-                    <li>Deep Learning</li>
-                    <li>NLP</li>
-                    <li>Data Visualization</li>
-                    <li>Model Evaluation</li>
-                    <li>Neural Networks</li>
-                </ul>
-            </skill-subsection>
+                <skill-subsection>
+                    <h3><i>Data Science &amp; AI:</i></h3>
+                    <ul>
+                        <li>Data Analysis</li>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>NLP</li>
+                        <li>Data Visualization</li>
+                        <li>Model Evaluation</li>
+                        <li>Neural Networks</li>
+                    </ul>
+                </skill-subsection>
+            </div>
         </section>
         
     </main>
 
     <footer>
        <p>
-            <svg 
-                viewBox="0 0 100 100"
-                width="16" height="16">
-                <circle cx="50" cy="50" r="46" stroke="black" stroke-width="6" fill="none" />
-                <path d="M66 36
-                    a20 20 0 1 0 0 28"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg> 
-            2025 Kate Wang |
+            &copy; 2025 Kate Wang |
             <a href="https://www.linkedin.com/in/kate-wang-174593244/">LinkedIn</a>
-
-            <!-- EC -->
-            <!--
-            <math>
-                <mi>E</mi>
-                <mo>=</mo>
-                <mi>m</mi>
-                <msup>
-                    <mi>c</mi>
-                    <mn>2</mn>
-                </msup>
-            </math>
-            -->
         </p>
     </footer>
     
