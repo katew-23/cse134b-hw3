@@ -6,23 +6,6 @@
     <title>Projects Subpage</title>
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/style.css">
-
-    <style>
-        h1 {
-            border-left: 600px solid transparent; 
-            border-right: 600px solid transparent;
-        }
-
-        div {
-            border-left: 300px solid transparent; 
-            border-right: 300px solid transparent;
-            border-bottom: 30px solid transparent;
-        }
-
-        p {
-            border-left: 50px solid transparent; 
-        }
-    </style>
 </head>
 
 <body>
@@ -39,44 +22,53 @@
 
     <noscript>This site works without JavaScript. Some embeds just won't load.</noscript>
 
-    <main>
-        <!-- This section will be updated once we implement JavaScript -->
-         
-        <h1>Project Title</h1>
-
-        <div>
+    <main>         
+        <a class="back-link" href="projects.html" aria-label="Back to projects">←</a>
+        <h1 class="center-heading">Memori</h1>
+       
+        <project-section>
             <h2>My role in the project:</h2>
-            <p>
-                Describe what you owned and how you collaborated. Mention 1-2 key
-                design or technical decisions you made and why they mattered.
-            </p>
-            <p>
-                Provide a short outcome: what shipped, who used it, or what improved
-                (e.g., reliability, speed, usability).
-            </p>
-        </div>
-
-        <div>
-            <h2>What I learned:</h2>
-            <p>
-                List concrete lessons—tradeoffs you discovered, debugging wins,
-                tooling you adopted, or how you refined requirements with teammates.
-            </p>
-            <p>
-                End with what you'd do next or how this influenced later projects.
-            </p>
-        </div>
-
-        <template id="project-facts">
-            <div>
-                <h2>Quick Facts</h2>
-                <ul>
-                    <li>Team size: 4</li>
-                    <li>Timeline: 6 weeks</li>
-                    <li>Tech: React Native, Express, MongoDB</li>
-                </ul>
+            <div class="proj-desc">
+                <p>
+                    For my project Memori, I developed a cross-platform mobile application using React Native and 
+                    Expo to let users create and share photo and video albums with built-in journaling and a calendar view. 
+                    I implemented core features such as album creation, media upload, and user authentication, connecting the 
+                    front end to a real-time backend. I also designed the navigation flow and optimized the layout for 
+                    responsive performance across iOS and Android devices.
+                </p>
+                <p>
+                    Beyond front-end development, I structured the data models to efficiently store user albums, 
+                    metadata, and media references while maintaining synchronization across users' shared albums. 
+                    I focused on building modular and reusable components to streamline future development and 
+                    improve scalability. Working in an agile environment, I translated product ideas into concrete 
+                    implementation tasks, conducted regular testing, and refined UI elements based on feedback to 
+                    enhance usability. Through Memori, I gained hands-on experience with full-stack mobile development, 
+                    UI design, and cloud-based data management.
+                </p>
             </div>
-        </template>
+        </project-section>
+
+        <project-section>
+            <h2>What I learned:</h2>
+            <div class="proj-desc">
+                <p>
+                    Through Memori, I learned how to take a product from concept to deployment while balancing both 
+                    technical implementation and user experience design. Building the app from scratch taught me how 
+                    to integrate front-end components with real-time backend services, handle asynchronous data flows, 
+                    and manage state effectively in React Native. I became more comfortable debugging complex issues 
+                    related to authentication, media rendering, and data synchronization, which strengthened my 
+                    problem-solving and debugging skills.
+                </p>
+                <p>
+                    Working with a small team in an agile development cycle also taught me the importance of clear 
+                    communication, version control, and iteration. I learned how to break down large goals into 
+                    achievable sprint tasks, gather feedback, and refine features for better usability. Most importantly, 
+                    the project gave me a deeper appreciation for how technical design decisions impact user experience--
+                    how small details in data structure, performance, and interface design can make an app feel more 
+                    seamless, personal, and meaningful to its users.
+                </p>
+            </div>
+        </project-section>
     </main>
 
     <footer>

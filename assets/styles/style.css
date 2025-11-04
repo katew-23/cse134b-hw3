@@ -204,7 +204,7 @@ skill-subsection ol {
     white-space: pre-line;
 }
 
-.contact-heading {
+.center-heading {
     text-align: center;
 }
 
@@ -265,6 +265,39 @@ form {
     }
 }
 
+.back-link {
+    position: static;           
+    display: inline-block;
+    margin-right: 0.75rem;
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: currentColor;
+    vertical-align: middle;      
+}
+
+project-section {
+    display: block;
+    margin-inline: auto;
+    max-width: 68ch;       
+    margin-block: 3rem;    
+}
+
+project-section > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+}
+
+.proj-desc {
+  max-width: 58ch;
+  margin-left: 2rem;
+}
+
+.proj-desc p + p {
+  margin-top: 1rem;
+}
+
 footer {
     text-align: center;
     padding: 0.5rem 0;
@@ -289,6 +322,9 @@ footer {
     .project td:last-child {
         padding-left: 0;
     }
+
+    .center-heading { font-size: 2.5rem; }
+    .proj-desc { margin-left: 1.25rem; }
 
     form {
         fieldset {
