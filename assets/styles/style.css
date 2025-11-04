@@ -2,6 +2,7 @@
 
 :root {
     --bg: #faf6df;
+    --card-bg: #fdfced;
 }
 
 * {
@@ -13,8 +14,9 @@ body {
     margin: 0;
 }
 
-main {
-    padding: 2rem 4rem; 
+header {
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -35,6 +37,10 @@ nav a:hover {
 
 nav a.active {
     color: darkcyan;
+}
+
+main {
+    padding: 2rem 4rem; 
 }
 
 section {
@@ -80,7 +86,7 @@ skill-subsection { display: block; }
 
 skill-subsection h3 {
     margin: 0 0 0.75rem 0;
-    font-size: 1.15rem;
+    font-size: 1.15em;
     font-weight: 400;
 }
 
@@ -88,6 +94,64 @@ skill-subsection ul,
 skill-subsection ol {
     margin: 0;
     line-height: 1.5;
+}
+
+@scope (#experiences) {
+    * {
+        background-color: var(--card-bg);
+    }
+
+    article {
+        width: 90%;
+        max-width: 900px;
+        margin-inline: auto;            
+        border: 1px solid #cfcfcf;
+        border-radius: 1.25rem;
+        padding: 2rem;
+        box-shadow: 0 .25rem .75rem rgba(0,0,0,.06);
+        overflow: hidden;
+    }
+
+    /* spacing between cards */
+    article + article { 
+        margin-top: 2.5rem; 
+    }
+
+    article {
+        h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 1rem 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: .5rem .75rem;
+            border-radius: 30px;
+        }
+
+        span { 
+            font-weight: 400; 
+            font-size: 0.8em;
+        }
+
+        ul {
+            margin: 0;
+            padding: .5rem 3rem;
+
+            li {
+                line-height: 1.5;
+                margin-block: .5rem;
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        article h3 {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: .25rem;
+        }
+    }
 }
 
 footer {
